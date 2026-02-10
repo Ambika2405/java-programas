@@ -1,4 +1,4 @@
-//Write down the program to reverse the given numbers using loops
+//Write down the program to reverse the given numbers using loops input is 876
 class ReverseNumber {
     public static void main(String[] args) {
         int num = 876;
