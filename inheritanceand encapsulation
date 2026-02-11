@@ -1,0 +1,26 @@
+class employee{
+  private double salary;
+  public void setSalary(double salary){
+    this.salary=salary;
+  }
+  public double getSalary(){
+    return salary;
+  }
+}
+class manager extends employee{
+  private double bonus;
+  public void setBonus(double bonus){
+    this.bonus=bonus;
+  }
+  public double totalsalary(){
+    return getSalary()+bonus;
+  }
+}
+public class Main {
+  public static void main(String[] args) {
+    manager m=new manager();
+    m.setSalary(2000);
+    m.setBonus(2000);
+    System.out.println("Total salary:" +m.totalsalary());
+  }
+}
