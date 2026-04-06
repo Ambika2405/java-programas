@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .container {
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            width: 350px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: none;
+            height: 80px;
+        }
+
+        .rating {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 8px;
+        }
+
+        .rating input {
+            margin-right: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            border: none;
+            background: #1e3c72;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #16325c;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Feedback Form</h2>
+
+    <form>
+        <label>Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Service Type</label>
+        <select>
+            <option>Website</option>
+            <option>App</option>
+            <option>Customer Support</option>
+        </select>
+
+        <label>Rating</label>
+        <div class="rating">
+            <label><input type="radio" name="rating">1</label>
+            <label><input type="radio" name="rating">2</label>
+            <label><input type="radio" name="rating">3</label>
+            <label><input type="radio" name="rating">4</label>
+            <label><input type="radio" name="rating">5</label>
+        </div>
+
+        <label>Comments</label>
+        <textarea placeholder="Write your feedback..."></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
