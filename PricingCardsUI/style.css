@@ -1,0 +1,90 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* BODY BACKGROUND */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+
+/* CONTAINER */
+.container {
+    display: flex;
+    gap: 25px;
+}
+
+/* CARD DESIGN */
+.card {
+    background: #1e293b;
+    color: white;
+    width: 260px;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+
+    /* Animation */
+    transition: all 0.3s ease;
+}
+
+/* TITLE */
+.card h2 {
+    margin-bottom: 10px;
+}
+
+/* PRICE */
+.price {
+    font-size: 30px;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+/* FEATURES */
+ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* BUTTON */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #38bdf8;
+    color: black;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0ea5e9;
+}
+
+/* HOVER EFFECT */
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* HIGHLIGHTED CARD */
+.featured {
+    border: 2px solid #38bdf8;
+    transform: scale(1.1);
+}
+
+/* HOVER FOR FEATURED */
+.featured:hover {
+    transform: scale(1.15);
+}
